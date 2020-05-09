@@ -14,6 +14,79 @@
 	integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
 	crossorigin="anonymous"
   />
+
+  <style>
+	  * {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+		.container {
+		  position: relative;
+		  width: 100%;
+		margin-right: 20px;
+		float:top;
+		float:right;
+		margin-left: 0px;
+		align-content: center;
+		padding-left: 350px;
+		
+
+		}
+		
+		.image {
+		  display: block;
+		  width: 50%;
+		  height: auto;
+		  align-content: center;
+		}
+		
+		.overlay {
+		  position: absolute;
+		  top: 0;
+		  bottom: 0;
+		  left: 0;
+		  right: 0;
+		  height: 100%;
+		  width: 100%;
+		  opacity: 0;
+		  transition: .5s ease;
+		  background-color: #000033;
+		}
+		
+		.container:hover .overlay {
+		  opacity: 1;
+		}
+		
+		.text {
+		  color: white;
+		  font-size: 20px;
+		  position: absolute;
+		  top: 50%;
+		  left: 50%;
+		  transform: translate(-50%, -50%);
+		  -ms-transform: translate(-50%, -50%);
+		  text-align: center;
+		}
+
+		.words{
+			text-align: center;
+
+		}
+		</style>
 </head>
 
 <body>
@@ -34,86 +107,50 @@
 	
 	<br>
 	
-	
-	
-	
+	<div class="words">
+		<h3>In the case of a sacramental emergency, please contact Fr. Nick Parker at:<br> 785-628-2468</h3>
+			<p>It is the duty and priviledge of IHM to provide the Sacraments to the people of Hays, Kansas.
+				<br> 
+				Adoration, Mass, and Confession Times can be found below.
+				<br>
+				To schedule Annointing of the Sick, Holy Orders, Baptism, or Marriage please contact Bradley Stramel at:<br> 785-625-7339 ext 101. </p>
+		</div>
 
+	<div class="container">
+			<img src="adore.jpg" alt="Adoration" class="image">
+			<div class="overlay">
+			  <div class="text">Our Parish offers Perpetual Adoration. Use our back parking lot for enterence.</div>
+			</div>
+		  </div>
+	
+		  <div class="container">
+				<img src="mass.jpg" alt="Mass" class="image">
+				<div class="overlay">
+				  <div class="text">
+					  Mass Times: <br>
+					- Wed - 5:30pm<br>
+					- Thurs - 8:00am, 6:30pm (Spanish)<br>
+					- Fri - 6:45am<br>
+					- Saturday 5:00pm<br>
+					- Sunday 9:00am, 12:00pm (Spanish), 6pm<br>
+				</div>
+				</div>
+			  </div>
 
-	
-	<main>
-	
-		<h1 class="off">Officers 2018-2019</h1>
-	
-	<div id="disciples"> </div>
-	
+			  <div class="container">
+					<img src="confession.jpg" alt="Confession" class="image">
+					<div class="overlay">
+					  <div class="text">
+						  Confession Times:<br>
+						    Monday-12:00 p.m<br>
+							Thursday-5:00 p.m.<br>
+							Friday-12:00 p.m.<br>
+							Saturday-4:00 p.m.<br>
+							Sunday-5:00 p.m. </div>
+					</div>
+				  </div>
 
-
-	
-<div id="table">
-	
-<table border="1">
-	<tr>
-		<th>Position</th>
-		<th>Name</th>
-		<th>Year</th>
-		<th>Area of Study</th>
-		</tr>
-			<tr>
-				<td>Pastor</td>
-				<td class="text">Fr. Fred Gatschet</td>
-				<td>NA</td>
-				<td>Chemistry/Biology</td>
-			</tr>
-			<tr>
-				<td>President</td>
-				<td class="text">Reese Leiker</td>
-				<td>Junior</td>
-				<td>Political Science</td>
-			</tr>
-			<tr>
-				<td>Vice-President</td>
-				<td class="text">Erica Heeke</td>
-				<td>Junior</td>
-				<td>Elementary Education</td>
-			</tr>
-			<tr>
-				<td>Treasurer</td>
-				<td class="text">Cole Jacobsen</td>
-				<td>Junior</td>
-				<td>Nursing</td>
-			</tr>			
-			<tr>
-				<td>Men's Event Coordinator</td>
-				<td class="text">John Egan</td>
-				<td>Sophomore</td>
-				<td>Finance</td>
-			</tr>
-			<tr>
-				<td>Women's Event Coordinator</td>
-				<td class="text">Rachel Doll</td>
-				<td>Senior</td>
-				<td>Secondary Education</td>
-			</tr>
-			<tr>
-				<td>Media Coordinator</td>
-				<td class="text">Matea Gregg</td>
-				<td>Senior</td>
-				<td>Communication</td>
-			</tr>
-			<tr>
-				<td>Faith Activities Coordinator</td>
-				<td class="text">Ben Schneider</td>
-				<td>Sophomore</td>
-				<td>Informatics</td>
-			</tr>
-</table>
-
-</div>
-		
-		
-			
-		
-		
+		<br>
 	</main>
 
 <div id=footer>
