@@ -1,0 +1,570 @@
+body {background-color:rgb(135, 135, 184); 
+	color:#666666;
+	font-family: Arial, Helvetica, sans-serif;
+	padding-left:10px;
+	margin:auto;
+	margin-bottom:100px;
+			    
+	
+}
+.topnav {
+    overflow: hidden;
+    background-color: #000033;
+    align-content: center;
+    padding-left: 275px;
+    
+ }
+  
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    text-align: center;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .topnav a.active {
+    background-color:rgb(135, 135, 184);
+    color: white;
+  }
+
+}
+
+#para {margin-left:.5em;
+padding-left:40px;
+
+}
+
+.home {padding-left:.5em;
+	
+}
+
+.hp {padding-left:.5em;
+	
+}
+
+
+
+footer {text-align:center;
+}
+
+
+#wrapper{margin-left: auto;
+			margin-right:auto;
+			width: 80%;
+			background-color:#F8F8FF;
+			min-width:960px;
+			max-width:2048px;
+			box-shadow:3px 3px 3px #333333;
+
+			margin-bottom:auto;
+			 border-radius: 15px;
+
+			 padding-bottom:50px;
+			
+			
+			
+}
+
+footer{font-size:75%;
+		font-style:italic;
+		text-align: center;
+		font-family: Georgia, 'Times New Roman', sans-serif;
+		padding:20px;
+		color:#808080;
+		margin-top:0px;
+		
+}
+
+h1{ margin-bottom:0px;
+	font-family: Georgia, 'Times New Roman', serif;
+	margin-top:0;
+	font-size:250%;
+	
+	
+}
+
+.off {color:#000033;
+		text-align:center;
+		margin-right:60px;
+		border-top:#000033;
+		border-top-style: dotted;
+		padding-top:1em;
+		padding-bottom:1em;
+}
+
+.reg {padding-left: 6.5em;
+		padding-right:6.5em;
+		border-top-style:dotted;
+		border-top-color:#000033;
+		padding-top:1em;
+		margin-right:5em;
+		text-align:center;
+}
+.year {margin-left: 13.5em;
+}
+
+#campus {height: 381px;
+			background-image: url(church.jpg);
+			float:left;
+			width: 500px;
+			repeat:no-repeat;
+			border-radius: 15px;
+			margin-left:0px;
+			margin-right:.75em;
+
+}
+			
+#disciples {height: 381px;
+			background-image: url(disciples.jpg);
+			float:left;
+			width:785px;
+			repeat:no-repeat;
+			border-radius: 15px;
+			margin-right:auto;
+			margin-left:auto;
+			
+			
+}
+
+
+main{
+	margin-left:auto;
+	margin-right:auto;
+	overflow:auto;
+	margin:15px;
+	display:block;
+	padding-left:75px;
+
+
+
+}
+
+h2{color:#808080;
+	font-family: Georgia, 'Times New Roman', serif;
+	text-shadow: 1px 1px 1px #CCCCCC;
+}
+	
+ header {background-color:#000033; 
+	color:#FFFFFF;
+	background-repeat:no-repeat;
+	background-position: right;
+	height: 60px;
+	text-align: center;
+	padding-top: 20px;
+	margin:0px;
+	margin-top:10px;
+	letter-spacing: .25em;
+
+}
+
+
+
+table {border: 2px solid #3399cc;
+	border-collapse: collapse;
+	padding-left:75px;
+	float:left;
+	margin-top: 2.5em;
+	margin-left:3em;
+	width: 80%;
+	
+}
+	
+td, th {padding: 0.5em;
+	border: 2px solid #000000;
+}
+	
+td {text-align: center;
+}
+
+tr:nth-child(odd) {background-color: #F5F5F5;
+}
+tr:nth-child(even) {background-color: #D1D1D1;
+}
+
+.text {text-align:left;
+}
+
+
+#pics {margin-left:6em;}
+
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+	display:block;
+	margin-left: 55px;
+	
+}
+
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: 100%;
+
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+
+
+
+		
+.button {
+    background-color: #000033;
+    border: none;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+	margin-left:26em;
+	position:relative;
+	
+}
+
+.button:hover {
+    background-color: #000000;
+}
+
+.why {text-align:center;
+		margin-right:4em;}
+		
+		
+.resc {text-align:center;
+		margin-right:2.5em;
+		
+}
+		
+		
+
+
+
+
+
+
+
+@media only screen and (max-width: 64em) {
+	
+
+	.resc {margin-left:auto;
+			margin-right:auto;
+			
+	}
+	.why {margin-left:auto;
+			margin-right:auto;
+		
+	}
+	.button{margin-left:auto;
+			margin-right:auto;
+			text-align:center;
+		
+	}
+	
+	.off {border-top-style:none;
+		padding-left:1.75em;}
+		
+	#table {padding-left:3em;}
+	
+	
+	body { margin: 0;
+			background-color:#FFFFFF;
+} 
+	#wrapper { background-image: linear-gradient(to bottom, #FFFFFF, #8B4513);
+			min-width: 0;
+			width:auto;
+			box-shadow:none;
+			border:none;
+			margin:none;
+}
+	header{padding:0.5em 0;
+			height:auto;
+			
+}
+	h1 {letter-spacing:.1em; 
+} 
+	 
+	main{
+	margin-left:0;
+	margin-top:0;
+	padding-left:5px;
+	text-align:center;
+}
+ 
+	nav { float: none;
+        width: auto; 
+		text-align:center;
+		padding:0;
+		text-decoration:none;
+		font-size:90%;
+		margin-bottom:0px;
+		padding-top:8px;
+		height:35px;
+		position:reative;
+		
+		
+}
+		
+	nav li { display: inline; 
+           padding: 0.25em 0.75em;
+} 
+
+#campus {height: 381px;
+			background-image: url(campus.jpg);
+			float:none;
+			width: 500px;
+			position:center;
+			margin-left:auto;
+			margin-right:auto;
+			
+}
+
+#cross {background-image:none;
+			height:0;
+			display:none;
+}
+
+#disciples {background-size:contain;
+
+margin-left:auto;
+margin-right:auto;
+max-height:70%;
+max-width:100%;
+background-repeat:no-repeat;}
+
+
+			
+h2 {text-align:center;
+	color:#F8F8FF;
+
+}
+p {text-align:center;
+	color:#F8F8FF;}
+			
+ 
+	footer{margin-left:0;
+	color:#FFFFFF;}
+	
+#footer {margin-left:0em;}
+
+.reg {display:block;
+	margin-left:auto;
+	margin-right:auto;
+	border-top-style:none;
+	
+}
+.year {margin-left:auto;
+		margin-right:auto;
+		text-align:center;
+}
+
+#pics {height:100%;
+		width:100%;
+		margin-left:0;
+		padding-right:5em;
+		margin-right: 100%;
+}
+
+
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    height:auto;
+	display:block;
+	max-width:100%;
+	margin-left:100px;
+	
+	
+}
+
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+	
+	
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+	
+}
+
+
+
+
+
+@media only screen and (max-width: 37.5em) {
+
+	 body { margin: 0;
+			background-color:#FFFFFF;
+} 
+
+	header{padding:.5em .5em 0;
+			height:50px;
+			margin-bottom:auto;
+			
+}
+
+.off {text-align:center;
+		border-top-style:none;
+		padding-left:3em;
+
+}
+
+
+#campus{	
+			background-image:none;
+			height:0;
+}
+
+#cross {background-image:none;
+		height:0;
+		display:none;
+}
+
+#disciples {display:none;
+
+}
+
+#table {margin-right:40em;
+padding-right:50em;
+}
+
+
+			
+	nav { padding:0;
+		
+			padding-top:0px;
+			background:none;
+			margin-bottom:8em;
+			
+}
+		
+	nav li { display:block;
+			margin:0;
+           padding-top: 0.25em; 
+		   padding-bottom:.25;
+		   padding-left:.75em;
+			padding-right:.75em;
+			
+}
+    
+	nav a {display:block;
+}			
+			
+						
+	h1 {font-size:1.75em;
+} 
+	 
+	main{margin-left:0;
+		padding-top:.1em;
+		padding-bottom:.1em;
+		padding-left:1em;
+		padding-right:0em;
+		font-size:90%;
+		border-top-color:#000033;
+		border-top:dotted;
+		margin-top:1em;
+		overflow:hidden;
+
+		
+}
+ 	
+			
+
+
+footer{
+	color:#FFFFFF;
+	text-align:center;
+	margin-left:auto;
+	margin-right:auto;
+	padding-right:0em;
+}
+
+input[type="submit"] { font-size:130%; background-color:#000033; color:#FFFFFF; 
+border-radius:.3em; letter-spacing:.1em; margin-right:5em; }
+
+.reg {border-top-style:none;
+margin-left:0em;
+display:block;
+padding-left:70px;
+padding-right:70px;
+float:center;
+}
+
+.year {margin-right:0em;
+margin-left:1em;
+}
+
+#form {margin-left:auto;
+		margin-right:auto;
+}
+
+div.gallery {
+    margin:none;
+    border: none;
+    float: left;
+    width: 100%;
+	margin-right:0em;
+	
+}
+
+
+div.gallery:hover {
+    border:none;
+}
+
+div.gallery img {
+	display:block;
+    width: 50%;
+    height: auto;
+	padding:none;
+	overflow:hidden;
+	margin-left:3em;
+
+}
+
+div.desc {
+    padding: none;
+    text-align: center;
+	display:none;
+}
+#video {padding-left:0px;
+height:auto;
+width:auto;
+float:left;
+margin-right:0px;
+margin-left:0px;
+margin-bottom:5em;
+position:relative;
+overflow:hidden;
+
+}
+
+
+
+
+
+

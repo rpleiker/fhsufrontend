@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+	<title>Catholic Disciples</title>
+	<meta charset="utf-8">
+	
+	<link rel="stylesheet" href="final.css" media="screen">
+	<link rel="stylesheet" href="print.css" media="print">	
+	
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+
+label {display:block; 
+		float:left;
+		width: 200px; 
+		text-align:right; 
+		padding-right:1em;
+		color:FFFFFF;
+		overflow:hidden;}
+
+input, textarea,radio {display:block; margin-bottom:20px; overflow:hidden; margin:none;}
+
+input[type="submit"] {margin-left:200px; font-size:130%; background-color:#000033; color:#FFFFFF; 
+border-radius:.3em; letter-spacing:.1em; overflow:hidden;}
+
+		
+#form {text-align:center;
+		color:FFFFFF;
+		margin-left:5em;
+		margin-top:2em;
+		}
+
+
+
+
+</style>
+
+	
+</head>
+
+
+<div id="wrapper">
+<body>
+
+	<header>
+		<h1>Catholic Disciples</h1>
+	</header>
+	
+	
+	<nav>
+		<ul>
+			<li><a href="final.html">Home</a></li>
+			<li><a href="aboutus.html">Officers</a></li>
+			<li><a href="media.html">Media</a></li>
+			<li><a href="resources.html">Resources</a></li>
+			<li> <a href="signup.html">Sign-Up</a></li>
+		</ul>
+		
+		<div id="cross"><img src="http://rpleiker.infprojects.fhsu.edu/final/cross.png" alt="cross"></div>
+		
+	</nav>
+	<br>
+	<main>
+	
+	<div id="title">
+	
+		<h2 class="reg">Register to be a Catholic Disciple!</h2>
+		<h3 class="year">2018-2019 School Year</h3>
+		
+	</div>
+		
+		<div id="form">
+		
+		<form meathod="post" action="http://webdevbasics.net/scripts/pacific/php">
+		
+		<label for="myFName">First Name:</label>
+		<input type="text" id="myFName" name="myFName" required="required">
+		
+			<label for="myFName"> Last name:</label>
+		<input type="text" id="myLname" name="myLName" required="required">
+		
+		<label for="myFName"> Diocese of Orgin:</label>
+		<input type="text" id="myDiocese" name="myDiocese" required="required">
+		
+			<label for="myDOB"> Date of Birth </label>
+		<input type="date" id="myDOB" name="myDOB" required="required">
+		
+			<label for="myArrival"> Graduation Year :</label>
+		<input type="year" min="2018" max="2022" id="myDate" name="myDate" required="required">
+			
+		
+			<label for="E-mail"> FHSU E-mail :</label>
+		<input type="email" id="myEmail" name="my myEmail" size="35" required="required">
+		
+			<label for="myPhone"> Phone :</label>
+		<input type="tel" id="myPhone" name="myPhone" maxlength="12" required="required">
+			
+			<label for="myComments"> Testimony (Optional):</label>
+		<textarea type="text" id="myTest" name="myTest" rows="4" cols="30"></textarea>
+		
+			<label for="myComments"> How did you hear about us?:</label>
+		<textarea type="text" id="myFind" name="myFind" rows="2" cols="30"></textarea>
+		
+		             <label>Are you Baptized?</label>
+             <select id = "myList">
+               <option value = "yes">Yes</option>
+               <option value = "no">No</option>
+     
+             </select>
+				
+
+
+		<br>
+		<br>
+		<input type="submit" value="Submit">
+		
+		</form>
+		</div>
+		
+
+		
+		
+<div id=footer>
+
+	<footer>
+		<div>	
+		<br>
+		Comeau Catholic Campus Center
+		<br>
+		 506 W 6th St.
+		<br>
+		Hays, KS
+		<br>
+		<br>
+		303-502-0496
+		<br>
+		</div>
+		
+	</footer>
+		
+</main>
+</div>
+</div>
+
+
+
+</body>
+</html>
