@@ -27,6 +27,13 @@ h1{
 }
 
 </style>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
 
 </head>
 
@@ -54,6 +61,208 @@ h1{
 	
 	
 <main>
+
+
+        <div class="container">
+                <h1>Sign Up</h1>
+                <form id="form-signup">
+                  <div class="form-group">
+                    <label for="inputEmail">Email address</label>
+                    <input
+                      type="email"
+                      id="signup_email"
+                      class="form-control"
+                      placeholder="Email address"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="inputPassword">Password</label>
+                    <input
+                      type="password"
+                      id="signup_password"
+                      class="form-control"
+                      placeholder="Password"
+                    />
+                  </div>
+                  <button class="btn btn-primary" type="submit">
+                    submit
+                  </button>
+                </form>
+                <h1>Contact Us</h1>
+                <form id="contact-form" method="POST">
+                  <div class="form-group">
+                    <label for="exampleFormControlInput1">Email address</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      name="email"
+                      placeholder="name@example.com"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleFormControlInput1">First Name</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="first_name"
+                      placeholder=""
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleFormControlInput1">Last Name</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="last_name"
+                      placeholder=""
+                    />
+                  </div>
+          
+                  <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Desired Ministry/Organization</label>
+                    <textarea class="form-control" id="messages" rows="3"></textarea>
+                  </div>
+                  <div class="form-group text=right">
+                    <button class="btn-btn-primary" type="submit">Submit</button>
+                  </div>
+                </form>
+              </div>
+              <!-- Optional JavaScript -->
+              <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+              <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+              <script
+                src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+                integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+                crossorigin="anonymous"
+              ></script>
+              <script
+                src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+                integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+                crossorigin="anonymous"
+              ></script>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyB09Ndz7U_Mprzvn_M1uZqFsOwArzgin8w",
+    authDomain: "fhsufrontend.firebaseapp.com",
+    databaseURL: "https://fhsufrontend.firebaseio.com",
+    projectId: "fhsufrontend",
+    storageBucket: "fhsufrontend.appspot.com",
+    messagingSenderId: "282655175316",
+    appId: "1:282655175316:web:f68bc9d17f387368f9ba81",
+    measurementId: "G-C0WVCW1T97"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+
+          
+                var db = firebase.firestore();
+          
+                $(document).on("submit", "#contact-form", function (event) {
+                  event.preventDefault();
+                  // Add a new document in collection "cities"
+                  db.collection("contacts")
+                    .doc()
+                    .set({
+                      email: $(this).find("input[name=email]").val(),
+                      first_name: $(this).find("input[name=first_name]").val(),
+                      last_name: $(this).find("input[name=last_name]").val(),
+                    })
+                    .then(function () {
+                      console.log("Document successfully written!");
+                    })
+                    .catch(function (error) {
+                      console.error("Error writing document: ", error);
+                    });
+                  //console.log($(this).find("input[name=email]").val());
+                  //console.log($(this).find("input[name=first_name]").val());
+                  //console.log($(this).find("input[name=last_name]").val());
+          
+                  var docRef = db.collection("contacts").doc("CFtpiNaGpMbY8LKC8TcU");
+          
+                  docRef
+                    .get()
+                    .then(function (doc) {
+                      if (doc.exists) {
+                        console.log("Document data:", doc.data());
+                      } else {
+                        // doc.data() will be undefined in this case
+                        console.log("No such document!");
+                      }
+                    })
+                    .catch(function (error) {
+                      console.log("Error getting document:", error);
+                    });
+                });
+          
+                var contactRef = db.collection("contacts");
+                contactRef.where("email", "==", "test@gmail.com");
+                contactRef.get().then(function (querySnapshot) {
+                  if (querySnapshot.size > 0) {
+                    console.log(querySnapshot.docs[0].data());
+                  } else console.log("no records found");
+                });
+                var auth = firebase.auth();
+          
+                $(document).on("submit", "#form-signup", function (event) {
+                  event.preventDefault();
+                  var promise = auth.createUserWithEmailAndPassword(
+                    $("#signup_email").val(),
+                    $("#signup_password").val()
+                  );
+                  promise.catch((e) => console.log(e.message));
+                });
+          
+                $(document).on("submit", "#form-signin", function (event) {
+                  event.preventDefault();
+                  var promise = auth.signInWithEmailAndPassword(
+                    $("#signin_email").val(),
+                    $("#signin_password").val()
+                  );
+                  promise.catch((e) => {
+                    console.log(e.message);
+                    $("#alert-signin").text(e.message);
+                    $("#alert-signin").show();
+                  });
+                });
+          
+                $(document).on("click", "#signout", function (event) {
+                  event.preventDefault();
+                  var promise = auth.signOut();
+                  promise.catch((e) => console.log(e.message));
+                });
+          
+                auth.onAuthStateChanged((firebaseUser) => {
+                  if (firebaseUser) {
+                    console.log(firebaseUser);
+                    user = firebaseUser;
+                  } else {
+                    user = null;
+                    console.log("not logged in");
+                  }
+                });
+              </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
 <div class="move">
 	
 <h1>Parish Priests</h1>
@@ -96,12 +305,6 @@ h1{
 <br>
 <br>
 <br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
 <div class="orgs">
 
 <h1>Administrative Staff</h1>
@@ -129,23 +332,23 @@ h1{
 
 <div id=footer>
 
-	<footer>
-		
-		<div>	
-		<br>
-		Comeau Catholic Campus Center
-		<br>
-		 506 W 6th St.
-		<br>
-		Hays, KS
-		<br>
-		<br>
-		303-502-0496
-		<br>
-		</div>
-		
-		
-	</footer>
+        <footer>
+                <p>
+                <div>	
+                <br>
+                Immaculate Heart of Mary Parish
+                <br>
+                1805 Vine Street
+                <br>
+                Hays, KS
+                <br>
+                <br>
+                Ph: 785-625-7339
+                <br>
+                </div>
+                
+                </p>
+            </footer>
 </div>
 </div>
 </body>
