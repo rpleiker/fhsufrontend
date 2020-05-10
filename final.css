@@ -100,39 +100,7 @@ h1{ margin-bottom:0px;
 		padding-bottom:1em;
 }
 
-.reg {padding-left: 6.5em;
-		padding-right:6.5em;
-		border-top-style:dotted;
-		border-top-color:#000033;
-		padding-top:1em;
-		margin-right:5em;
-		text-align:center;
-}
-.year {margin-left: 13.5em;
-}
 
-#campus {height: 381px;
-			background-image: url(church.jpg);
-			float:left;
-			width: 500px;
-			repeat:no-repeat;
-			border-radius: 15px;
-			margin-left:0px;
-			margin-right:.75em;
-
-}
-			
-#disciples {height: 381px;
-			background-image: url(disciples.jpg);
-			float:left;
-			width:785px;
-			repeat:no-repeat;
-			border-radius: 15px;
-			margin-right:auto;
-			margin-left:auto;
-			
-			
-}
 
 
 main{
@@ -166,28 +134,6 @@ h2{color:#808080;
 }
 
 
-
-table {border: 2px solid #3399cc;
-	border-collapse: collapse;
-	padding-left:75px;
-	float:left;
-	margin-top: 2.5em;
-	margin-left:3em;
-	width: 80%;
-	
-}
-	
-td, th {padding: 0.5em;
-	border: 2px solid #000000;
-}
-	
-td {text-align: center;
-}
-
-tr:nth-child(odd) {background-color: #F5F5F5;
-}
-tr:nth-child(even) {background-color: #D1D1D1;
-}
 
 .text {text-align:left;
 }
@@ -285,7 +231,7 @@ div.desc {
 	body { margin: 0;
 			background-color:#FFFFFF;
 } 
-	#wrapper { background-image: linear-gradient(to bottom, #FFFFFF, #8B4513);
+	#wrapper { background-image: linear-gradient(to bottom, #FFFFFF, rgb(142, 177, 206));
 			min-width: 0;
 			width:auto;
 			box-shadow:none;
@@ -306,48 +252,6 @@ div.desc {
 	text-align:center;
 }
  
-	nav { float: none;
-        width: auto; 
-		text-align:center;
-		padding:0;
-		text-decoration:none;
-		font-size:90%;
-		margin-bottom:0px;
-		padding-top:8px;
-		height:35px;
-		position:reative;
-		
-		
-}
-		
-	nav li { display: inline; 
-           padding: 0.25em 0.75em;
-} 
-
-#campus {height: 381px;
-			background-image: url(campus.jpg);
-			float:none;
-			width: 500px;
-			position:center;
-			margin-left:auto;
-			margin-right:auto;
-			
-}
-
-#cross {background-image:none;
-			height:0;
-			display:none;
-}
-
-#disciples {background-size:contain;
-
-margin-left:auto;
-margin-right:auto;
-max-height:70%;
-max-width:100%;
-background-repeat:no-repeat;}
-
-
 			
 h2 {text-align:center;
 	color:#F8F8FF;
@@ -429,30 +333,8 @@ div.desc {
 			
 }
 
-.off {text-align:center;
-		border-top-style:none;
-		padding-left:3em;
-
-}
 
 
-#campus{	
-			background-image:none;
-			height:0;
-}
-
-#cross {background-image:none;
-		height:0;
-		display:none;
-}
-
-#disciples {display:none;
-
-}
-
-#table {margin-right:40em;
-padding-right:50em;
-}
 
 
 			
@@ -515,10 +397,7 @@ padding-left:70px;
 padding-right:70px;
 float:center;
 }
-
-.year {margin-right:0em;
-margin-left:1em;
-}
+\
 
 #form {margin-left:auto;
 		margin-right:auto;
@@ -553,17 +432,7 @@ div.desc {
     text-align: center;
 	display:none;
 }
-#video {padding-left:0px;
-height:auto;
-width:auto;
-float:left;
-margin-right:0px;
-margin-left:0px;
-margin-bottom:5em;
-position:relative;
-overflow:hidden;
 
-}
 
 
 
