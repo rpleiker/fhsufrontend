@@ -4,9 +4,19 @@ body {background-color:rgb(135, 135, 184);
 	padding-left:10px;
 	margin:auto;
 	margin-bottom:100px;
+
 			    
 	
 }
+#campus {height: 381px;
+	background-image: url(church.jpg);
+	float:left;
+	width: 500px;
+	repeat:no-repeat;
+	border-radius: 15px;
+	margin-left:0px;
+	margin-right:.75em;}
+
 .topnav {
     overflow: hidden;
     background-color: #000033;
@@ -35,7 +45,7 @@ body {background-color:rgb(135, 135, 184);
     color: white;
   }
 
-}
+
 
 #para {margin-left:.5em;
 padding-left:40px;
@@ -397,7 +407,7 @@ padding-left:70px;
 padding-right:70px;
 float:center;
 }
-\
+
 
 #form {margin-left:auto;
 		margin-right:auto;
@@ -432,8 +442,6 @@ div.desc {
     text-align: center;
 	display:none;
 }
-
-
 
 
 

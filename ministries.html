@@ -129,6 +129,20 @@ h1{
                   </div>
                 </form>
               </div>
+
+                    <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
+                  
+                    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+                    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
+                  
+                    <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+                    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-analytics.js"></script>
+                  
+                    <!-- Add Firebase products that you want to use -->
+                    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-auth.js"></script>
+                    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-firestore.js"></script>
+                    <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-analytics.js"></script>
+
               <!-- Optional JavaScript -->
               <!-- jQuery first, then Popper.js, then Bootstrap JS -->
               <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -142,12 +156,6 @@ h1{
                 integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
                 crossorigin="anonymous"
               ></script>
-<!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-app.js"></script>
-
-<!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-<script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-analytics.js"></script>
 
 <script>
   // Your web app's Firebase configuration
@@ -164,6 +172,7 @@ h1{
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
   firebase.analytics();
+
 
           
                 var db = firebase.firestore();
