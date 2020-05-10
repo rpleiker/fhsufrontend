@@ -15,7 +15,11 @@ body {background-color:rgb(135, 135, 184);
 	repeat:no-repeat;
 	border-radius: 15px;
 	margin-left:0px;
-	margin-right:.75em;}
+	margin-right:.75em;
+	content: center;
+	display: block;
+}
+
 
 .topnav {
     overflow: hidden;
@@ -40,10 +44,7 @@ body {background-color:rgb(135, 135, 184);
     color: black;
   }
   
-  .topnav a.active {
-    background-color:rgb(135, 135, 184);
-    color: white;
-  }
+
 
 
 
@@ -241,7 +242,7 @@ div.desc {
 	body { margin: 0;
 			background-color:#FFFFFF;
 } 
-	#wrapper { background-image: linear-gradient(to bottom, #FFFFFF, rgb(142, 177, 206));
+	#wrapper { background-image: linear-gradient(to bottom, #FFFFFF, rgb(37, 57, 73));
 			min-width: 0;
 			width:auto;
 			box-shadow:none;
@@ -326,7 +327,10 @@ div.desc {
 }
 
 
-
+.form{
+	padding-right: 500px;
+	color: #ddd;
+}
 
 
 

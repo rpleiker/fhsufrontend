@@ -13,34 +13,42 @@
 		crossorigin="anonymous"
 	  />
 
+
 		<link rel="stylesheet" href="final.css" media="screen">
-	    <!-- Bootstrap CSS -->
-		<link rel="stylesheet" href="style.css">
-		<title>IHM Catholic Church</title>
-	
+		<!-- Bootstrap CSS -->
 
-	
+		<style>
+				.form {
+					margin-left: 460px;
+				
+					
+				}
+				
+				.fb{
+					margin-left: 500px;
+				}
+				h2{
+				text-align:center;
+				margin-left: 0;
+				}
+				</style>
 
 
+<title>IHM Catholic Church</title>
 	
 </head>
-<style>
-.form {
-	margin-left: 460px;
 
-	
-}
-
-.fb{
-	margin-left: 500px;
-}
-h2{
-text-align:center;
-margin-left: 0;
-}
-</style>
 <body>
 <script>
+
+function myFunction(){
+		  	  alert("Thank you for registering!");
+				console.log(document.getElementById("email").value);
+			return false;
+			
+
+	  }
+
       function statusChangeCallback(response) {
         // Called with the results from FB.getLoginStatus().
         console.log("statusChangeCallback");
@@ -168,6 +176,9 @@ margin-left: 0;
 		  </script>
 
 		  <h2>Become a member of our parish!</h2>
+		  
+
+
 		  <div class="fb">
 				<fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
 				  </fb:login-button>
@@ -176,16 +187,18 @@ margin-left: 0;
 </div>
 
 <br>
+
 			<div class="form">
 				
-		        <form action="/action_page.php">
+		        <form>
 					<label for="fname">First name:</label><br>
 					<input type="text" id="fname" name="fname" value=""><br>
 					<label for="lname">Last name:</label><br>
 					<input type="text" id="lname" name="lname" value=""><br><br>
 					<label for="email">Email:</label><br>
 					<input type="email" id="email" value=""><br><br>
-					<input type="submit" value="Submit">
+					<button onclick="myFunction()" id="button">Submit</button>
+
 				  </form> 
 				  </div>
 				  <br>
